@@ -69,7 +69,7 @@ class Contact
     public function collection(){
         $collection = array();
         $collection['email'] = array(new NotBlank(array('message' => 'Email should not be blank')), new Email(array('message'=>'Email not valid')));
-        $collection['message'] = array(new NotBlank(array('message' => 'Message should not be blank')), new Length(array('max' =>100, 'maxMessage' =>'Message cannot be greater than 100 characters')));
+        $collection['message'] = array(new NotBlank(array('message' => 'Message should not be blank')), new Length(array('max' =>1000, 'maxMessage' =>'Message cannot be greater than 100 characters')));
         return  new Collection($collection);
     }
 

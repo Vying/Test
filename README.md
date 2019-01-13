@@ -34,6 +34,12 @@ database_user (root):
 database_password (null):
 ```
 
+* Create Database
+```
+php bin/console doctrine:database:create
+php bin/console doctrine:schema:update --force
+```
+
 * Start Server 
 ```
 php bin/console server:run
@@ -48,12 +54,20 @@ URL: http://localhost:8000/contact
 ### HTTP Allowed method: POST
 
 ### Post Parameter: 
-email, message
+[email], [message]
 
-## Code Explanation
+## To Run Unit Test
 
+```
+vendor/bin/simple-phpunit
+```
 
+## Important File:
 
+* Controller: src/AppBundle/Controller/ContactController.php
+* Service: src/AppBundle/Service/Contact.php
+* Entity: src/AppBundle/Entity/Contact.php
+* Test: tests/AppBundle/Service/ContactTest.php
 
 
 

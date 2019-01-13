@@ -56,7 +56,7 @@ URL: http://localhost:8000/contact
 ### Post Parameter: 
 [email], [message]
 
-## To Run Unit Test
+## To Run Unit Test ( OK (7 tests, 11 assertions) ) 
 
 ```
 vendor/bin/simple-phpunit
@@ -67,7 +67,8 @@ vendor/bin/simple-phpunit
 * Controller: src/AppBundle/Controller/ContactController.php
 * Service: src/AppBundle/Service/Contact.php
 * Entity: src/AppBundle/Entity/Contact.php
-* Test: tests/AppBundle/Service/ContactTest.php
+* UnitTest: tests/AppBundle/Service/ContactTest.php
+* Functional Test: tests/AppBundle/Controller/ContactControllerTest.php
 
 
 

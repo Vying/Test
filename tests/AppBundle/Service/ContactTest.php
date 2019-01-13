@@ -2,8 +2,7 @@
 namespace Test\AppBundle\Service;
 
 class ContactTest extends \PHPUnit_Framework_TestCase {
-
-    /** @var  $con  */
+    
     var $contact;
 
     public function setUp(){
@@ -49,4 +48,5 @@ class ContactTest extends \PHPUnit_Framework_TestCase {
          $contact->insertContact();
 
     }
+
 }
